@@ -16,9 +16,7 @@ function Game() {
     <>
       <GuessInput
         addGuess={(guess) => {
-          const newGuesses = [...guesses];
-          newGuesses.push({ id: crypto.randomUUID(), value: guess });
-          setGuesses(newGuesses);
+          setGuesses([...guesses, guess]);
         }}
       />
       <GuessList guesses={guesses} />
