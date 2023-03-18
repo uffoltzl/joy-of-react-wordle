@@ -19,7 +19,7 @@ function Game() {
           setGuesses([...guesses, guess]);
         }}
       />
-      <GuessList guesses={guesses} />
+      <GuessList guesses={guesses} answer={answer} />
     </>
   );
 }
